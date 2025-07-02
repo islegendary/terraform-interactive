@@ -44,7 +44,7 @@ The prompt must present the following **Segment resource types** for user select
 
 2. **Generate a main.tf Template:**
 
-   - Create a `main.tf` file in the `tf` directory.
+   - Create an output to be pasted into a `main.tf` file.
    - Populate the file with the selected Terraform resource block.
    - Use appropriate placeholders (e.g., resource names, descriptions, file names) for the user to update.
 
@@ -97,4 +97,9 @@ resource "segment_function" "example" {
 
 - Additional resource-specific properties should be referenced directly from the Segment Terraform provider documentation.
 - The solution must be interactive and able to generate correct files on the fly without hardcoding the resource details.
+
+### Do not reference or use
+
+- **Segment Public API Documentation:**\
+  [https://reference.segmentapis.com/](https://reference.segmentapis.com/)
 
